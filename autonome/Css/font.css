@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'metropolis';
-  src: url('../Fonts/Metropolis-Regular.otf') format('otf');
+  src: url('Fonts/Metropolis-Regular.otf') format('otf');
   font-weight: normal;
   font-style: normal;
 }
