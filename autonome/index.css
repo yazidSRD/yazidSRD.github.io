@@ -60,37 +60,24 @@ body
 .map
 {
     aspect-ratio: 2 / 1;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    color: #ffffff;
-    background-color: #AD222D;
-    font-family:'Courier New', Courier, monospace;
-    justify-content: center;
     max-height: 500px;
+    min-width: 100%;
+    display: flex;
+    color: #ffffff;
+    font-family:'Courier New', Courier, monospace;
 }
 
 .map > *
 {
-    /* height: 100%; */
-    max-height: 500px;
-
-    /* min-width: 300px; */
-    /* width: 100%; */
-    flex: 1 1 300px;
+    height: 100%;
+    width: 100%;
 }
-
-/* .map > iframe
-{
-    min-width: 300px;
-} */
 
 .map > div
 {
     background-color: #AD222D;
     display: grid;
     grid-template-columns: repeat(1, 100%);
-    /* max-height: 200px; */
     max-width: 300px;
 }
 
@@ -109,8 +96,7 @@ body
 
 .map > div > ul
 {
-    display: grid;
-    gap: 5px;
+    gap: 10px;
     list-style-type: none;
     padding-left: 10px;
     padding-right: 10px;
@@ -120,7 +106,7 @@ body
 {
     /* display: grid; */
     /* grid-template-columns: repeat(2, 50%); */
-    /* margin-bottom: 5px; */
+    margin-bottom: 5px;
     display: flex;
 
     white-space: nowrap;
@@ -218,18 +204,8 @@ body
 .images_x
 {
     display: flex;
-    width: 100%;
-    height: auto;
-    /* overflow-x: hidden; */
-    overflow-x: scroll;
-    overflow-y: hidden;
-
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-}
-
-.images_x::-webkit-scrollbar {
-  display: none;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 .images_x > div
