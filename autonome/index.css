@@ -226,7 +226,8 @@ body
     scrollbar-width: none;
     -ms-overflow-style: none;
 
-    height: 500px;
+    min-height: 350px;
+    max-height: 600px;
 }
 
 .images_x::-webkit-scrollbar {
