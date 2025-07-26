@@ -60,24 +60,37 @@ body
 .map
 {
     aspect-ratio: 2 / 1;
-    max-height: 500px;
-    min-width: 100%;
+    width: 100%;
     display: flex;
+    flex-wrap: wrap;
     color: #ffffff;
+    background-color: #AD222D;
     font-family:'Courier New', Courier, monospace;
+    justify-content: center;
+    max-height: 500px;
 }
 
 .map > *
 {
-    height: 100%;
-    width: 100%;
+    /* height: 100%; */
+    max-height: 500px;
+
+    /* min-width: 300px; */
+    /* width: 100%; */
+    flex: 1 1 300px;
 }
+
+/* .map > iframe
+{
+    min-width: 300px;
+} */
 
 .map > div
 {
     background-color: #AD222D;
     display: grid;
     grid-template-columns: repeat(1, 100%);
+    /* max-height: 200px; */
     max-width: 300px;
 }
 
@@ -96,7 +109,8 @@ body
 
 .map > div > ul
 {
-    gap: 10px;
+    display: grid;
+    gap: 5px;
     list-style-type: none;
     padding-left: 10px;
     padding-right: 10px;
@@ -106,7 +120,7 @@ body
 {
     /* display: grid; */
     /* grid-template-columns: repeat(2, 50%); */
-    margin-bottom: 5px;
+    /* margin-bottom: 5px; */
     display: flex;
 
     white-space: nowrap;
@@ -204,17 +218,27 @@ body
 .images_x
 {
     display: flex;
-    max-width: 100%;
-    overflow-x: hidden;
+    flex-wrap: nowrap; 
+    width: 100%;
+    
+    overflow-x: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.images_x::-webkit-scrollbar {
+  display: none;
 }
 
 .images_x > div
 {
     aspect-ratio: 2 / 1;
+    min-width: 175px;
     width: 50%;
     max-width: 300px;
     display : flex;
     flex-direction: column;
+    flex-shrink: 0; 
 }
 
 .images_x > div > *
