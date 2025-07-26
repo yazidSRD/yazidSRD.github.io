@@ -167,38 +167,6 @@ body
     align-items: center;
 }
 
-@media (min-width: 800px) {
-    .images_y
-    {
-        gap: 150px;
-        padding-top: 100px;
-        padding-bottom: 100px;
-    }
-    .images_y > div
-    {
-        height: 200px;
-        gap: 200px;
-        align-items: center;
-        position: relative;
-    }
-    /* .images_y > div > *:nth-child(1)
-    {
-        transform: translate(50%,0);
-    }
-    .images_y > div > *:nth-child(2)
-    {
-        transform: translate(-50%,0);
-    } */
-    .images_y > div > img
-    {
-        height: 400px;
-    }
-    .images_y > div > div
-    {
-        width: 200px;
-    }
-}
-
 /*///////////////////////////////////////////////////////////*/
 
 .images_x
