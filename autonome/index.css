@@ -164,15 +164,10 @@ body
 
 .images_y > div > *
 {
-    width: 50%;
-    height: 100%;
+    /* max-width: 50%;
+    max-height: 100%; */
     aspect-ratio: 1 / 1;
     object-fit: cover;
-}
-
-.images_y > div > div
-{
-    padding: 20px;
 }
 
 .images_y > div > div
@@ -182,6 +177,7 @@ body
     text-align: justify;
     justify-content: center;
     align-items: center;
+    padding: 20px;
 }
 
 @media (min-width: 800px) {
