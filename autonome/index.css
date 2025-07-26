@@ -1,7 +1,7 @@
 body
 {
     margin: 0;
-    /* background-color: red; */
+    background-color: red;
 }
 
 /*///////////////////////////////////////////////////////////*/
@@ -226,8 +226,7 @@ body
     scrollbar-width: none;
     -ms-overflow-style: none;
 
-    height: auto;          /* Laisse le contenu définir la hauteur */
-    align-items: stretch;  /* S'assure que les enfants occupent bien la hauteur */
+    height: fit-content;
 }
 
 .images_x::-webkit-scrollbar {
