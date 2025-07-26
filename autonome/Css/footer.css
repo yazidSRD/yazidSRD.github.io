@@ -1,0 +1,101 @@
+#foot
+{
+    background-color: #000000;
+
+    color : #ffffff;
+    font-family:'Courier New', Courier, monospace;
+}
+
+#foot > div:nth-child(1)
+{
+    display : flex;
+    flex-wrap: wrap;
+    align-items: center;
+    min-height: 100px;
+    margin-left: 10px;
+    margin-right: 10px;
+    gap: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    justify-content: center;
+}
+
+#foot > div:nth-child(1) > div:nth-child(1) > img
+{
+    height: 80px;
+}
+
+#foot > div:nth-child(1) > div:nth-child(2)
+{
+    display: grid;
+    grid-template-columns: repeat(1, 135px);
+    row-gap: 10px;
+    column-gap: 0px;
+}
+
+#foot > div:nth-child(1) > div:nth-child(2) > div
+{
+    display : flex;
+    align-items: center;
+    gap: 5px;
+    height: 20px;
+    cursor: pointer;
+}
+
+#foot > div:nth-child(1) > div:nth-child(2) > div > img
+{
+    height: 20px;
+}
+
+#foot > div:nth-child(1) > div:nth-child(3)
+{
+    flex: 1;
+    margin-bottom: 10px;
+    align-self: stretch;
+    display : flex;
+    justify-content: right;
+    align-items:end;
+    white-space: nowrap;
+}
+
+#foot > div:nth-child(2)
+{
+    height: 50px;
+}
+
+#foot > div:nth-child(3)
+{
+    position: fixed;
+    background-color: #ff0000;
+    
+    height: 50px;
+    width: 100%;
+    /* z-index: 900; */
+    display: flex;
+    gap: 100px;
+    /* top: 100%;
+    transform: translate(0, -100%); */
+    inset: auto 0% 0%;
+    justify-content: center;
+}
+
+#foot > div:nth-child(3) > *
+{
+    width: auto;
+    height: 100%;
+    display: flex;
+    flex: none;
+    align-items: center;
+
+    animation: 15s linear infinite scroll;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(calc(-100% - 100px));
+    }
+}
