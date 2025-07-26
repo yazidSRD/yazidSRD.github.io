@@ -1,7 +1,7 @@
 body
 {
     margin: 0;
-    background-color: red;
+    /* background-color: red; */
 }
 
 /*///////////////////////////////////////////////////////////*/
@@ -226,7 +226,7 @@ body
     scrollbar-width: none;
     -ms-overflow-style: none;
 
-    height: fit-content;
+    height: 500px;
 }
 
 .images_x::-webkit-scrollbar {
