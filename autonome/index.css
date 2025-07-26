@@ -153,9 +153,10 @@ body
 
 .images_y > div
 {
-    aspect-ratio: 2 / 1;
-    min-width: 100%;
+    /* aspect-ratio: 2 / 1; */
+    width: 100%;
     display : flex;
+    height: 50vw;
     max-height: 400px;
     justify-content: center;
     background-color: #AD222D;
@@ -163,6 +164,8 @@ body
 
 .images_y > div > *
 {
+    width: 50%;
+    height: 100%;
     aspect-ratio: 1 / 1;
     object-fit: cover;
 }
@@ -206,6 +209,7 @@ body
     .images_y > div > img
     {
         height: 400px;
+        width: 400px;
     }
     .images_y > div > div
     {
@@ -227,7 +231,7 @@ body
     -ms-overflow-style: none;
 
     min-height: 350px;
-    height: 100vw;;
+    height: 100vw;
     max-height: 600px;
 }
 
