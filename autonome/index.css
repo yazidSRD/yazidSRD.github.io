@@ -218,7 +218,8 @@ body
 .images_x
 {
     display: flex;
-    max-width: 100%;
+    width: 100%;
+    height: auto;
     /* overflow-x: hidden; */
     overflow-x: scroll;
     overflow-y: hidden;
