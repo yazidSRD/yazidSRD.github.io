@@ -220,15 +220,18 @@ body
     display: flex;
     flex-wrap: nowrap; 
     width: 100%;
-    height: max-content;
     
     overflow-x: scroll;
+    overflow-y: hidden;
     scrollbar-width: none;
     -ms-overflow-style: none;
+
+    height: auto;          /* Laisse le contenu définir la hauteur */
+    align-items: stretch;  /* S'assure que les enfants occupent bien la hauteur */
 }
 
 .images_x::-webkit-scrollbar {
-  display: none;
+    display: none;
 }
 
 .images_x > div
