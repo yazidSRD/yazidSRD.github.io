@@ -1,7 +1,7 @@
 body
 {
     margin: 0;
-    font-family: metropolis, sans-serif;
+    font-family: metropolis;
     /* background-color: rgb(0, 255, 191); */
 }
 
@@ -66,7 +66,6 @@ body
     flex-wrap: wrap;
     color: #ffffff;
     background-color: #AD222D;
-    font-family:'Courier New', Courier, monospace;
     justify-content: center;
     max-height: 500px;
 }
