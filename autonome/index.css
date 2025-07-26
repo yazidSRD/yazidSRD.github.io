@@ -227,6 +227,7 @@ body
     -ms-overflow-style: none;
 
     min-height: 350px;
+    height: 100vw;;
     max-height: 600px;
 }
 
