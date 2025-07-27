@@ -8,6 +8,29 @@
 
 #head > div:nth-child(1)
 {
+    height: 50px;
+    background-color: aquamarine;
+    width: 100%;
+}
+
+#head > div:nth-child(2)
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+@media (min-width: 850px) {
+    #head > div:nth-child(2)
+    {
+        position: fixed;
+        z-index: 1;
+    }
+}
+
+#head > div:nth-child(2) > div:nth-child(1)
+{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,12 +40,24 @@
     flex: 1 1 300px;
 }
 
-#head > div:nth-child(1) > *
+#head > div:nth-child(2) > div:nth-child(1) > *
 {
     height: 38px;
 }
 
-#head > div:nth-child(2)
+@media (max-width: 849px) {
+    #head > div:nth-child(2) > div:nth-child(1)
+    {
+        position: fixed;
+        z-index: 1;
+
+        top: 0;
+        width: 100%;
+        background-color: #ffffff;
+    }
+}
+
+#head > div:nth-child(2) > div:nth-child(2)
 {
     display: grid;
     grid-template-columns: repeat(1, 128px);
@@ -30,13 +65,15 @@
     align-items: center;
     gap: 10px;
     
+    min-height: 50px;
+
     flex: 1 1 550px;
     flex-wrap: wrap;
     
     font-weight: lighter;
 }
 
-#head > div:nth-child(2) > *
+#head > div:nth-child(2) > div:nth-child(2) > *
 {
     width: 128px;
     height: 36px;
@@ -44,12 +81,12 @@
     cursor: pointer;
 }
 
-#head > div:nth-child(2) > *:hover
+#head > div:nth-child(2) > div:nth-child(2) > *:hover
 {
     background-color: #922029;
 }
 
-#head > div:nth-child(2) > * > *
+#head > div:nth-child(2) > div:nth-child(2) > * > *
 {
     display : flex;
     justify-content: center;
@@ -60,13 +97,13 @@
 }
 
 @media (min-width: 280px) {
-  #head > div:nth-child(2) {
-    grid-template-columns: repeat(2, 128px);
+  #head > div:nth-child(2) > div:nth-child(2) {
+      grid-template-columns: repeat(2, 128px);
   }
 }
 
 @media (min-width: 550px) {
-  #head > div:nth-child(2) {
-    grid-template-columns: repeat(4, 128px);
-  }
+    #head > div:nth-child(2) > div:nth-child(2) {
+        grid-template-columns: repeat(4, 128px);
+    }
 }
