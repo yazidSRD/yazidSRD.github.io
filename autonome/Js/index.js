@@ -27,7 +27,7 @@ async function LoadGallery(gallery)
     var Try = 0;
     var count = 1;
 
-    while (Try != MaxTry && count != 100)
+    while (Try != MaxTry)
     {
         console.log(' ddd ', count, Try);
 
@@ -44,16 +44,23 @@ async function LoadGallery(gallery)
                 const blob = await response.blob();
                 const imageUrl = URL.createObjectURL(blob);
                 img.src = imageUrl;
-                photo.appendChild(img);
 
                 const div   = document.createElement('div');
-                photo.appendChild(div);
 
                 const span  = document.createElement('span');
                 span.textContent = await (await fetch(`Galleries/${gallery.getAttribute('gallery')}/Photo_${count}/text.txt`)).text();
                 div.appendChild(span);
 
                 gallery.appendChild(photo);
+
+                if (count % 2 == 1)
+                {
+                    photo.appendChild(img);
+                    photo.appendChild(div);
+                } else {
+                    photo.appendChild(div);
+                    photo.appendChild(img);
+                }
 
                 Try = 0;
             } else {
