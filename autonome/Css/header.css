@@ -9,7 +9,6 @@
 #head > div:nth-child(1)
 {
     height: 50px;
-    background-color: aquamarine;
     width: 100%;
 }
 

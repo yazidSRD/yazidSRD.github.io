@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="Css/header.css">
         <link rel="stylesheet" href="Css/footer.css">
         <link rel="stylesheet" href="Css/font.css">
+        <script type="text/javascript" src="Js/index.js"></script>
     </head>
     <body>
         <div id="head">
@@ -75,8 +76,8 @@
 
             <div class="title"><span>Nos pâtisseries !</span></div>
 
-            <div class="images_x scroll-x">
-                <div>
+            <div class="images_x scroll-x gallery" gallery="Patisserie">
+                <!-- <div>
                     <img src="Images/patisserie_1.jpg">
                     <div><span>Un grand classique revisité avec finesse : pâte à choux dorée, garnie d'une onctueuse crème pâtissière au chocolat noir. Un pur moment de gourmandise.</span></div>
                 </div>
@@ -111,13 +112,13 @@
                 <div>
                     <img src="Images/patisserie_5.webp">
                     <div><span>Un cœur tendre pour les amoureux : coque de macaron délicate, garnie d'une ganache fondante aux fruits rouges ou au chocolat, décoré avec élégance. Une déclaration d'amour sucrée à partager.</span></div>
-                </div>
+                </div> -->
             </div>
 
             <div class="title"><span>Nos livres !</span></div>
 
-            <div class="images_x scroll-x">
-                <div>
+            <div class="images_x scroll-x gallery" gallery="Library">
+                <!-- <div>
                     <img src="Images/livre_1.jpg">
                     <div><span>Manifeste politique d'Hitler, exposant son idéologie nazie. Ouvrage controversé à valeur historique.</span></div>
                 </div>
@@ -152,7 +153,7 @@
                 <div>
                     <img src="Images/livre_5.jpg">
                     <div><span>Texte sacré de l'islam, considéré comme la parole divine révélée à Mahomet.</span></div>
-                </div>
+                </div> -->
             </div>
 
             <div class="title"><span>Nous sommes ici !</span></div>
@@ -223,18 +224,4 @@
         </div>
     </body>
 </html>
-
-            
-<script>
-    const containers = document.querySelectorAll('.scroll-x');
-
-    containers.forEach(container => {
-        container.addEventListener('wheel', function (e) {
-        if (e.deltaY !== 0) {
-            e.preventDefault();
-            container.scrollLeft += e.deltaY;
-        }
-        }, { passive: false });
-    });
-</script>
 
